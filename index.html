@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProjectFlow Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>ProjectFlow</h2>
+    <ul>
+        <li>Dashboard</li>
+        <li>Projects</li>
+        <li>Tasks</li>
+        <li>Team</li>
+        <li>Reports</li>
+    </ul>
+</div>
+
+<div class="main">
+    <h1>Project Management Dashboard</h1>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Active Projects</h3>
+            <p>12</p>
+        </div>
+
+        <div class="card">
+            <h3>Completed</h3>
+            <p>34</p>
+        </div>
+
+        <div class="card">
+            <h3>Team Members</h3>
+            <p>18</p>
+        </div>
+
+        <div class="card">
+            <h3>Tasks Due</h3>
+            <p>7</p>
+        </div>
+    </div>
+
+    <div class="task-section">
+        <h2>Add New Task</h2>
+
+        <input type="text" id="taskInput" placeholder="Enter task">
+
+        <button onclick="addTask()">Add Task</button>
+
+        <ul id="taskList"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
